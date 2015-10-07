@@ -5,11 +5,8 @@
 /home/roy/.vimrc
 /home/roy/.aliases
 /home/roy/.w3m/keymap
-/usr/local/sbin/backup
-/usr/local/sbin/pm
-/usr/local/bin/battery
-/usr/local/bin/prep2names
-/usr/local/bin/recset
+/usr/local/sbin/*
+/usr/local/bin/*
 /etc/udev/rules.d/a0-local.rules
 /var/spool/cron/roy
 /home/roy/.pentadactylrc
