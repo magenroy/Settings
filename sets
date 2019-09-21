@@ -8,7 +8,6 @@
 /usr/local/sbin/*
 /usr/local/bin/*
 /etc/udev/rules.d/a0-local.rules
-/var/spool/cron/roy
 /home/roy/.pentadactylrc
 /home/roy/.i3/*
 /home/roy/.i3status.conf
