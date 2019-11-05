@@ -8,6 +8,7 @@
 /home/roy/.config/zathura/zathurarc
 /home/roy/.config/qutebrowser/config.py
 /home/roy/.config/redshift.conf
+/home/roy/.config/git/config
 /usr/local/sbin/*
 /usr/local/bin/*
 /etc/udev/rules.d/a0-local.rules
