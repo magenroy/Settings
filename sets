@@ -3,7 +3,7 @@
 /home/roy/.bashrc
 /home/roy/.ratpoisonrc
 /home/roy/.vimrc
-/home/roy/.vim/spell/*.add.*
+/home/roy/.vim/spell/*.add*
 /home/roy/.aliases
 /home/roy/.w3m/keymap
 /home/roy/.config/zathura/zathurarc
