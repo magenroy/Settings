@@ -13,9 +13,6 @@
 /home/roy/.config/redshift.conf
 /home/roy/.config/git/config
 /home/roy/.config/vlc/vlcrc
-/usr/local/sbin/*
-/usr/local/bin/*
-/etc/udev/rules.d/a0-local.rules
 /home/roy/.pentadactylrc
 /home/roy/.i3/*
 /home/roy/.i3status.conf
@@ -28,3 +25,6 @@
 /home/roy/Documents/Macros.sty
 /home/roy/.config/herbstluftwm/*
 /home/roy/.Xresources
+/usr/local/sbin/*
+/usr/local/bin/*
+/etc/udev/rules.d/a0-local.rules
