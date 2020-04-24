@@ -13,8 +13,12 @@
 /home/roy/.config/redshift.conf
 /home/roy/.config/git/config
 /home/roy/.config/vlc/vlcrc
+/home/roy/.config/i3/*
+/home/roy/.config/sway/*
+/home/roy/.config/herbstluftwm/*
+/home/roy/.config/systemd/*
+/home/roy/.scripts/*
 /home/roy/.pentadactylrc
-/home/roy/.i3/*
 /home/roy/.i3status.conf
 /home/roy/.profile
 /home/roy/.tmux.conf
@@ -23,7 +27,6 @@
 /home/roy/.muttrc
 /home/roy/.mutt/keybindings
 /home/roy/Documents/Macros.sty
-/home/roy/.config/herbstluftwm/*
 /home/roy/.Xresources
 /usr/local/sbin/*
 /usr/local/bin/*
