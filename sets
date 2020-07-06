@@ -15,6 +15,7 @@
 /home/roy/.config/vlc/vlcrc
 /home/roy/.config/i3/*
 /home/roy/.config/sway/*
+/home/roy/.config/rofi/*
 /home/roy/.config/herbstluftwm/*
 /home/roy/.config/systemd/*
 /home/roy/.config/environment.d/*
