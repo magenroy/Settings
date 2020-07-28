@@ -1,0 +1,3 @@
+/usr/local/sbin/*
+/usr/local/bin/*
+/etc/udev/rules.d/a0-local.rules
