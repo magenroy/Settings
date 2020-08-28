@@ -13,6 +13,7 @@
 .config/qutebrowser/css/*
 .config/qutebrowser/quickmarks
 .config/redshift.conf
+.config/mpv/mpv.conf
 .config/git/config
 .config/vlc/vlcrc
 .config/i3/*
