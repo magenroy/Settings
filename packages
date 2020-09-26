@@ -1,6 +1,10 @@
 fonts-noto
 texlive
+swayidle
+swaylock
 brightnessctl
+playerctl
 rofi
 rxvt-unicode
 gvim
+dunst or mako
