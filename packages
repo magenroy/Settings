@@ -7,5 +7,6 @@ playerctl
 rofi
 rxvt-unicode
 gvim
+wob
 dunst or mako
 texlive-lang-cjk (or at least Japanese (for yo))
