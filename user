@@ -24,6 +24,7 @@
 .config/herbstluftwm/*
 .config/systemd/*
 .config/environment.d/*
+.config/mimeapps.list
 .scripts/*
 .pentadactylrc
 .i3status.conf
