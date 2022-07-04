@@ -1,0 +1,526 @@
+# REFERENCE: https://www.mankier.com/package/sway
+# https://github.com/swaywm/sway/wiki/Systemd-integration#running-sway-itself-as-a---user-service
+# https://github.com/DiegoGuidaF/dotfiles/blob/master/sway/.config/sway/config
+#
+# TODO:
+#	wob display
+#	show keyboard layout
+#	scratchpad?
+#	urxvtc DONE?
+#	hide cursor after wait
+#	locker
+#	waybar
+#	outputs
+#	mako
+#	seats instead of xdotool
+#		and use event codes instead of x11 button names?
+#	systemd?
+#		if so, move some init things to that
+#	redshift in init
+#	get terminal etc from environment variables instead of setting them here
+#	partition file into parts and use "include"
+#	qt5 things from https://github.com/swaywm/sway/wiki/Running-programs-natively-under-Wayland
+#	marks DONE
+
+titlebar_border_thickness 0
+titlebar_padding 1 1
+
+exec ~/.scripts/init
+
+## WOB
+exec [ ! -e $SWAYSOCK.wob ] && mkfifo $SWAYSOCK.wob || tail -f $SWAYSOCK.wob
+exec tail -f $SWAYSOCK.wob | wob -m 1000
+
+#set $TERMINAL urxvt
+set $BROWSER qutebrowser
+
+# background
+#output * background #000000 solid_color
+output "*" bg ~/.config/sway/wallpaper.jpg fill
+
+
+# TEMPORARILY COMMENTED OUT
+#input type:keyboard {
+#	xkb_layout us,fr,ru
+#	xkb_options grp:shifts_toggle,compose:caps,grp:switch,terminate:ctrl_alt_bksp
+#}
+
+input type:touchpad {
+	dwt enabled
+	natural_scroll disabled
+	middle_emulation disabled
+}
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below. ISO 10646 = Unicode
+font -misc-fixed-medium-r-normal--10-120-75-75-C-70-iso10646-1
+# The font above is very space-efficient, that is, it looks good, sharp and
+# clear in small sizes. However, if you need a lot of unicode glyphs or
+# right-to-left text rendering, you should instead use pango for rendering and
+# chose a FreeType font, such as:
+# font pango:DejaVu Sans Mono 10
+
+# $i3-theme-window
+# solarized accents
+set $yellow	#b58900
+set $orange	#cb4b16
+set $red	#dc322f
+set $magenta	#d33682
+set $violet	#6c71c4
+set $blue	#268bd2
+set $cyan	#2aa198
+set $green	#859900
+
+# solarized dark
+set $baseA3 #002b36
+set $baseA2 #073642
+set $baseA1 #586e75
+set $baseA0 #657b83
+set $baseB0 #839496
+set $baseB1 #93a1a1
+set $baseB2 #eee8d5
+set $baseB3 #fdf6e3
+
+###################
+# solarized (clean)
+###################
+# clientclass 			border  backgr. text 	indicator
+#client.focused 			$green	$green	$baseB3 $blue
+#client.focused_inactive		$cyan	$cyan	$baseB2 $violet
+#client.unfocused  		$baseA2 $baseA2 $baseB1 $baseA1
+#client.urgent 	 		$yellow $yellow $baseB3 $orange
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+	# $i3-theme-bar
+#	colors {
+#		# status
+#		separator $blue
+#		background $baseA3
+#		statusline $baseB2
+#
+#		###################
+#		# solarized (clean)
+#		###################
+#		# workclass 			border  backgr. text
+#		focused_workspace		$green  $green  $baseA3
+#		active_workspace		$cyan   $cyan   $baseA2
+#		inactive_workspace		$baseA2 $baseA2 $baseB1
+#		urgent_workspace		$orange $orange $baseB3
+#		urgent_workspace		$yellow $yellow $baseB3
+#	}
+
+	position top
+	font pango:Fixed Mono 11
+	status_command i3status
+	#swaybar_command waybar
+
+	#no mouse (scroll to change workspace = ew)
+	#bindsym button1 nop
+	bindsym button2 nop
+	#bindsym button3 nop
+	bindsym button4 nop
+	bindsym button5 nop
+	bindsym button6 nop
+	bindsym button7 nop
+	bindsym button8 nop
+	bindsym button9 nop
+}
+
+#no mouse (scroll to change window = ew)
+#bindsym button1 nop
+bindsym button2 nop
+#bindsym button3 nop
+bindsym button4 nop
+bindsym button5 nop
+bindsym button6 nop
+bindsym button7 nop
+bindsym button8 nop
+bindsym button9 nop
+focus_follows_mouse no
+
+default_border pixel 1
+hide_edge_borders --i3 both
+
+#for some reason this works on my chromebook, but just Alt or Mod1 does not
+set $mod Mod2+Alt
+set $cmd exec --no-startup-id "rofi -modi run,drun,window -show drun"
+set $wincmd exec --no-startup-id "rofi -modi run,drun,window -show window"
+set $btcmd exec --no-startup-id "bluetoothctl -- connect $(~/.scripts/bluetooth-menu)"
+set $wificmd exec --no-startup-id "bluetoothctl -- connect $(~/.scripts/wifi-menu)"
+set $send exec --no-startup-id xte
+
+bindsym $mod+Shift+r reload
+
+## Keycodes
+
+#ctrl+[
+set $escape Ctrl+34
+
+#hjkl
+set $left 43
+set $down 44
+set $up 45
+set $right 46
+
+set $return 36
+set $colon Shift+47
+
+#sv
+set $horizontal 39
+set $vertical 55
+
+#f
+set $full 41
+
+#m
+set $mark 58
+
+#`
+set $goto 49
+
+
+#q
+set $quit 24
+
+#ud
+set $parent 30
+set $child 40
+
+#<>-+
+set $less Shift+59
+set $more Shift+60
+set $minus 20
+set $plus Shift+21
+
+#1234567890
+
+set $1 10
+set $2 11
+set $3 12
+set $4 13
+set $6 15
+set $7 16
+set $8 17
+set $9 18
+set $0 19
+
+##aliases
+
+set $exitmode mode "normal"
+
+set $scrollLeft seat - cursor press button6
+set $scrollDown seat - cursor press button5
+set $scrollUp seat - cursor press button4
+set $scrollRight seat - cursor press button7
+
+set $mouseLeft xdotool mousemove_relative --polar 270
+set $mouseDown xdotool mousemove_relative 0
+set $mouseUp xdotool mousemove_relative --polar 0
+set $mouseRight xdotool mousemove_relative --polar 90
+
+set $pressLeft seat - cursor press button1
+set $releaseLeft seat - cursor release button1
+set $clickLeft "exec xdotool click 1"
+
+set $pressMiddle seat - cursor press button2
+set $releaseMiddle seat - cursor release button2
+set $clickMiddle "exec xdotool click 2"
+
+set $pressRight seat - cursor press button3
+set $releaseRight seat - cursor release button3
+set $clickRight "exec xdotool click 3"
+
+set $louder exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status #increase sound volume
+set $quieter exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status #decrease sound volume
+set $mute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status # mute sound
+set $micmute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status # mute mic
+
+# increase screen brightness
+set $brighter exec echo $(~/.scripts/setbrightness 5%+) > "$SWAYSOCK".wob #"brightnessctl set 5%+"
+# increase screen brightness; update this if brightnessctl allows percent minvalues
+set $dimmer exec echo $(~/.scripts/setbrightness 5%-) > "$SWAYSOCK".wob
+
+set $mediaplay exec --no-startup-id playerctl play
+set $mediapause exec --no-startup-id playerctl pause
+set $mediatoggleplay exec --no-startup-id playerctl play-pause
+set $medianext exec --no-startup-id playerctl next
+set $mediaprev exec --no-startup-id playerctl previous
+
+## Bindings
+
+bindsym XF86Screensaver output * dpms on
+bindsym Shift+XF86Screensaver output * dpms off
+
+#floating
+bindsym $mod+Slash floating toggle
+bindsym $mod+Shift+Slash focus mode_toggle
+
+set $exitbind bindcode Ctrl+34 mode "default"
+
+#marks
+#bindcode $mod+$mark exec i3-input -F "mark --replace %s" -P "Mark: "
+#bindcode $mod+$goto exec i3-input -F "[con_mark=\"%s\"] focus" -P "Goto: "
+
+# puts current marks into dmenu format
+set $getmarks swaymsg -t get_marks | grep '"' | sed 's/\s*"\(.*\)",*\s*/\1/'
+
+set $setmark $getmarks | rofi -dmenu | xargs swaymsg mark
+set $gotomark $getmarks | rofi -dmenu | xargs -I "%s" swaymsg [con_mark="%s"] focus
+bindcode $mod+$mark exec --no-startup-id $setmark
+bindcode $mod+$goto exec --no-startup-id $gotomark
+
+# Touchpad toggle
+set $touchpadtoggle exec ~/.scripts/touchpadtoggle
+bindsym XF86TouchpadToggle $touchpadtoggle
+
+# Media controls
+bindsym XF86AudioRaiseVolume $louder
+bindsym XF86AudioLowerVolume $quieter
+bindsym XF86AudioMute $mute
+bindsym XF86AudioMicMute $micmute
+bindsym Shift+XF86AudioRaiseVolume $medianext
+bindsym Shift+XF86AudioLowerVolume $mediaprev
+bindsym Shift+XF86AudioMute $mediatoggleplay
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp $brighter
+bindsym XF86MonBrightnessDown $dimmer
+
+# screenshot
+set $screenshot grim -g "$(slurp)" - | wl-copy
+bindsym Print exec --no-startup-id $screenshot
+
+# start a terminal
+bindcode $mod+$return exec $TERMINAL
+
+# start a browser
+#bindsym $mod+equal exec $BROWSER
+
+# kill focused window
+bindcode $mod+Shift+$quit kill
+
+# start dmenu (a program launcher)
+bindcode $mod+$colon $cmd
+bindcode $mod+Shift+48 $wincmd
+bindsym $mod+b $btcmd
+bindsym $mod+c $wificmd
+
+# change focus
+bindcode $mod+$left focus left
+bindcode $mod+$down focus down
+bindcode $mod+$up focus up
+bindcode $mod+$right focus right
+
+# move focused window
+bindcode $mod+Shift+$left move left
+bindcode $mod+Shift+$down move down
+bindcode $mod+Shift+$up move up
+bindcode $mod+Shift+$right move right
+
+# split in horizontal orientation
+bindcode $mod+$horizontal split v
+
+# split in vertical orientation
+bindcode $mod+$vertical split h
+
+# enter fullscreen mode for the focused container
+bindcode $mod+$full bar mode toggle
+bindcode $mod+Shift+$full fullscreen
+
+# change container layout (stacked, tabbed, toggle split)
+bindcode $mod+Shift+$horizontal layout stacking
+bindcode $mod+Shift+$vertical layout tabbed
+bindsym $mod+space layout toggle split
+
+# focus the parent container
+bindcode $mod+$parent focus parent
+
+# focus the child container
+bindcode $mod+$child focus child
+
+## WORKSPACES 
+workspace_layout tabbed
+
+set $ws1 ""
+set $ws2 ""
+set $ws3 ""
+set $ws4 ""
+set $ws5 ""
+set $ws6 ""
+set $ws7 ""
+set $ws8 ""
+set $ws9 ""
+set $ws10 ""
+
+# switch to workspace
+bindcode $mod+$1 workspace number 1 $ws1
+bindcode $mod+$2 workspace number 2 $ws2
+bindcode $mod+$3 workspace number 3 $ws3
+bindcode $mod+$4 workspace number 4 $ws4
+bindcode $mod+$5 workspace number 5 $ws5
+bindcode $mod+$6 workspace number 6 $ws6
+bindcode $mod+$7 workspace number 7 $ws7
+bindcode $mod+$8 workspace number 8 $ws8
+bindcode $mod+$9 workspace number 9 $ws9
+bindcode $mod+$0 workspace number 10 $ws10
+
+#bindsym $mod+w workspace back_and_forth
+
+# move focused container to workspace
+bindcode $mod+Shift+$1 move container to workspace number 1 $ws1
+bindcode $mod+Shift+$2 move container to workspace number 2 $ws2
+bindcode $mod+Shift+$3 move container to workspace number 3 $ws3
+bindcode $mod+Shift+$4 move container to workspace number 4 $ws4
+bindcode $mod+Shift+$5 move container to workspace number 5 $ws5
+bindcode $mod+Shift+$6 move container to workspace number 6 $ws6
+bindcode $mod+Shift+$7 move container to workspace number 7 $ws7
+bindcode $mod+Shift+$8 move container to workspace number 8 $ws8
+bindcode $mod+Shift+$9 move container to workspace number 9 $ws9
+bindcode $mod+Shift+$0 move container to workspace number 10 $ws10
+
+#bindsym $mod+Shift+w move container to workspace back_and_forth
+
+# exit i3 (logs you out of your X session)
+# bindsym $mod+Shift+e exit
+
+
+bindcode $mod+$less resize shrink width 10px or 10 ppt
+bindcode $mod+$more resize grow width 10px or 10ppt 
+bindcode $mod+$minus resize shrink height 10px or 10 ppt
+bindcode $mod+$plus resize grow height 10px or 10 ppt
+
+set $sendkey --release exec --no-startup-id xdotool key --clearmodifiers
+# find a way to make prefixing commands with numbers work
+mode "normal" {
+    bindsym i mode "default"
+    bindcode $colon $cmd
+
+    bindcode $left $sendkey Left
+    bindcode $down $sendkey Down
+    bindcode $up $sendkey Up
+    bindcode $right $sendkey Right
+    bindsym Shift+4 $sendkey End
+    bindsym Shift+6 $sendkey Home # should be to first non whitespace
+    bindsym 0 $sendkey Home
+    bindsym w $sendkey ctrl+Right
+    bindsym b $sendkey ctrl+Left
+
+    bindsym x $sendkey Delete
+    bindsym Shift+x $sendkey Backspace
+
+    bindsym Ctrl+w mode "Window"
+    #bindsym g mode "Tab"
+}
+
+bindcode $mod+Ctrl+34 mode "normal"
+
+bindsym $mod+Left $scrollLeft
+bindsym $mod+Down $scrollDown
+bindsym $mod+Up $scrollUp
+bindsym $mod+Right $scrollRight
+
+mode "scroll" {
+	$exitbind
+
+	bindcode $left $scrollLeft
+	bindcode $down $scrollDown
+	bindcode $up $scrollUp
+	bindcode $right $scrollRight
+}
+
+#bindsym Shift+XF86TouchpadToggle mode "scroll"
+
+set $mouseL g
+set $mouseR semicolon
+
+set $small 2
+set $medium 16
+set $large 128
+mode "mouse" {
+    $exitbind
+
+# should use less hardcoded values
+
+    bindcode Ctrl+$left seat - cursor move -$small 0
+    bindcode Ctrl+$down seat - cursor move 0 $small
+    bindcode Ctrl+$up seat - cursor move 0 -$small
+    bindcode Ctrl+$right seat - cursor move $small 0
+
+    bindcode $left seat - cursor move -$medium 0
+    bindcode $down seat - cursor move 0 $medium
+    bindcode $up seat - cursor move 0 -$medium
+    bindcode $right seat - cursor move $medium 0
+
+    bindcode Shift+$left seat - cursor move -$large 0
+    bindcode Shift+$down seat - cursor move 0 $large
+    bindcode Shift+$up seat - cursor move 0 -$large
+    bindcode Shift+$right seat - cursor move $large 0
+
+    bindsym $mouseL --release $clickLeft
+    bindsym Shift+$mouseL $pressLeft
+    bindsym Ctrl+$mouseL $releaseLeft
+
+    bindsym $mouseR --release $clickRight
+    bindsym Shift+$mouseR $pressRight
+    bindsym Ctrl+$mouseR $releaseRight
+}
+
+
+bindsym $mod+Ctrl+m mode "mouse"
+
+mode "Output" {
+    $exitbind
+
+    bindcode $left --release focus output left; $exitmode
+    bindcode $down --release focus output down; $exitmode
+    bindcode $up --release focus output up; $exitmode
+    bindcode $right --release focus output right; $exitmode
+}
+
+bindsym $mod+Shift+w mode "Output"
+
+mode "Window" {
+    $exitbind
+
+    bindcode $left --release focus left; $exitmode
+    bindcode $down --release focus down; $exitmode
+    bindcode $up --release focus up; $exitmode
+    bindcode $right --release focus right; $exitmode
+    bindcode Ctrl+$left --release focus left; $exitmode
+    bindcode Ctrl+$down --release focus down; $exitmode
+    bindcode Ctrl+$up --release focus up; $exitmode
+    bindcode Ctrl+$right --release focus right; $exitmode
+
+    bindcode Shift+$left --release move container left; $exitmode
+    bindcode Shift+$down --release move container down; $exitmode
+    bindcode Shift+$up --release move container up; $exitmode
+    bindcode Shift+$right --release move container right; $exitmode
+
+	bindcode $less --release resize shrink width 10px or 10 ppt; $exitmode
+	bindcode $more --release resize grow width 10px or 10ppt ; $exitmode
+	bindcode $minus --release resize shrink height 10px or 10 ppt; $exitmode
+	bindcode $plus --release resize grow height 10px or 10 ppt; $exitmode
+
+    bindsym c --release kill; $exitmode
+    bindsym q --release kill; $exitmode
+
+    bindsym s --release split v; $exitmode
+    bindsym v --release split h; $exitmode
+
+    bindsym o --release fullscreen; $exitmode
+}
+
+bindsym $mod+w mode "Window"
+bindsym $mod+Ctrl+w mode "Window"
+
+#mode "Tab" {
+#    $exitbind
+#    bindsym t --release workspace next; $exitmode
+#    bindsym T --release workspace prev; $exitmode
+#}
+#
+#bindsym $mod+g mode "Tab"
+
+#exec "systemctl --user import-environment; systemctl --user start sway-session.target"

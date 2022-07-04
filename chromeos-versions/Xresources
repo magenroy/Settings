@@ -1,0 +1,143 @@
+*scrollBar: false
+!*font: -*-terminus-medium-r-normal-*-22-*-*-*-c-*-iso10646-*
+!*font: -misc-fixed-medium-r-normal-*-20-*-*-*-*-*-iso10646-*
+URxvt.font: xft:Inconsolata:size=16
+rofi.font: Inconsolata 11
+!URxvt.font: xft:Noto mono:pixelsize=18:pointsize=14:antialias=true:hinting=true
+!*font: xft:Inconsolata:pixelsize=18:pointsize=14:antialias=true:hinting=true
+!*boldFont: xft:Inconsolata:bold:pixelsize=17:antialias=true:hinting=true
+
+! Only for xterm?
+*faceName: terminus:size=14
+!*faceName: inconsolata:size=14
+
+URxvt*.letterSpace: -1
+
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+! Disable the weird picture cap mode, but not the ISO14755 insertion mode
+URxvt.iso14755: true
+URxvt.iso14755_52: false
+
+!dzen2.font: -xos4-terminus-medium-r-normal-*-16-160-*-*-c-*-iso10646-*
+
+#define S_yellow		#b58900
+#define S_orange		#cb4b16
+#define S_red			#dc322f
+#define S_magenta		#d33682
+#define S_violet		#6c71c4
+#define S_blue			#268bd2
+#define S_cyan			#2aa198
+#define S_green			#859900
+
+#define S_base03		#002b36
+#define S_base02		#073642
+#define S_base01		#586e75
+#define S_base00		#657b83
+#define S_base0			#839496
+#define S_base1			#93a1a1
+#define S_base2			#eee8df
+#define S_base3			#fdf6e3
+
+*background: rgb:11/11/11
+*foreground: rgb:FF/FF/FF
+
+!*color0:			S_base02
+!*color1:			S_red
+!*color2:			S_green
+!*color3:			S_yellow
+!*color4:			S_blue
+!*color5:			S_magenta
+!*color6:			S_cyan
+!*color7:			S_base2
+!*color9:			S_orange
+!*color8:			S_base03
+!*color10:			S_base01
+!*color11:			S_base00
+!*color12:			S_base0
+!*color13:			S_violet
+!*color14:			S_base1
+!*color15:			S_base3
+!
+!*background:			S_base03
+!*foreground:			S_base0
+*fading:			40
+*fadeColor:			S_base03
+*cursorColor:			S_base1
+*pointerColorBackground:	S_base01
+*pointerColorForeground:	S_base1
+
+XTerm*color0:			#000000
+XTerm*color1:			#cc0000
+XTerm*color2:			#008000
+XTerm*color3:			#808000
+XTerm*color4:			#0000c0
+XTerm*color5:			#c000c0
+XTerm*color6:			#008080
+XTerm*color7:			#c0c0c0
+XTerm*color8:			#808080
+XTerm*color9:			#ff6060
+XTerm*color10:			#00ff00
+XTerm*color11:			#ffff00
+XTerm*color12:			#8080ff
+XTerm*color13:			#ff40ff
+XTerm*color14:			#00ffff
+XTerm*color15:			#ffffff
+
+!*.color0:			#000000
+!*.color1:			#cc0000
+!*.color2:			#008000
+!*.color3:			#808000
+!*.color4:			#0000c0
+!*.color5:			#c000c0
+!*.color6:			#008080
+!*.color7:			#c0c0c0
+!*.color8:			#808080
+!*.color9:			#ff6060
+!*.color10:			#00ff00
+!*.color11:			#ffff00
+!*.color12:			#8080ff
+!*.color13:			#ff40ff
+!*.color14:			#00ffff
+!*.color15:			#ffffff
+
+!! special
+!*.foreground:   #93a1a1
+!*.background:   #002b36
+!*.cursorColor:  #93a1a1
+!
+!! black
+!*.color0:       #002b36
+!*.color8:       #657b83
+!
+!! red
+!*.color1:       #dc322f
+!*.color9:       #dc322f
+!
+!! green
+!*.color2:       #859900
+!*.color10:      #859900
+!
+!! yellow
+!*.color3:       #b58900
+!*.color11:      #b58900
+!
+!! blue
+!*.color4:       #268bd2
+!*.color12:      #268bd2
+!
+!! magenta
+!*.color5:       #6c71c4
+!*.color13:      #6c71c4
+!
+!! cyan
+!*.color6:       #2aa198
+!*.color14:      #2aa198
+!
+!! white
+!*.color7:       #93a1a1
+!*.color15:      #fdf6e3
