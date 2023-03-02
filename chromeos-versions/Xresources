@@ -1,7 +1,7 @@
 *scrollBar: false
 !*font: -*-terminus-medium-r-normal-*-22-*-*-*-c-*-iso10646-*
 !*font: -misc-fixed-medium-r-normal-*-20-*-*-*-*-*-iso10646-*
-URxvt.font: xft:Inconsolata:size=16
+*font: xft:NotoSansMono:pixelsize=14:antialias=true:hinting=true
 rofi.font: Inconsolata 11
 !URxvt.font: xft:Noto mono:pixelsize=18:pointsize=14:antialias=true:hinting=true
 !*font: xft:Inconsolata:pixelsize=18:pointsize=14:antialias=true:hinting=true
