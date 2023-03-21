@@ -11,7 +11,7 @@ playerctl
 pulseaudio-utils
 rofi
 rxvt-unicode
-gvim
+neovim
 wob
 dunst or mako
 slurp
