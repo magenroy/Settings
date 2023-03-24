@@ -8,6 +8,7 @@
 .aliases
 .inputrc
 .w3m/keymap
+.config/foot/*
 .config/nvim/*
 .config/zathura/zathurarc
 .config/qutebrowser/config.py

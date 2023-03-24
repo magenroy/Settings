@@ -10,8 +10,12 @@ brightnessctl
 playerctl
 pulseaudio-utils
 rofi
-rxvt-unicode
+rxvt-unicode? (if not using foot)
 neovim
 wob
 dunst or mako
 slurp
+gammastep
+zathura
+
+imv? fim? swayimg?
