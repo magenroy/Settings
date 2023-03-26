@@ -1,5 +1,5 @@
 /usr/local/sbin/*
 /usr/local/bin/*
 /usr/local/lib/systemd/*
-/user/local/share/i3blocks/*
+/usr/local/share/i3blocks/*
 /etc/udev/rules.d/a0-local.rules
