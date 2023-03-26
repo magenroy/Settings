@@ -14,10 +14,9 @@
 .config/qutebrowser/config.py
 .config/qutebrowser/css/*
 .config/qutebrowser/quickmarks
-.config/redshift.conf
 .config/mpv/mpv.conf
+.config/redshift.conf
 .config/gammastep/*
-.config/waybar/*
 .config/git/config
 .config/vlc/vlcrc
 .config/i3/*
@@ -27,9 +26,11 @@
 .config/systemd/*
 .config/environment.d/*
 .config/mimeapps.list
+.config/waybar/*
+.config/i3status/config
+.config/i3blocks/config
 .scripts/*
 .pentadactylrc
-.i3status.conf
 .profile
 .tmux.conf
 .byobu/keybindings.tmux
