@@ -22,6 +22,7 @@
 .config/i3/*
 .config/sway/*
 .config/rofi/*
+.config/wofi/*
 .config/herbstluftwm/*
 .config/systemd/*
 .config/environment.d/*

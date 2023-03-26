@@ -9,7 +9,7 @@ brightnessctl
 	may need to make brightness file readable
 playerctl
 pulseaudio-utils
-rofi
+wofi and maybe rofi
 rxvt-unicode? (if not using foot)
 neovim
 wob
@@ -17,6 +17,8 @@ dunst or mako
 slurp
 gammastep
 zathura
+
+probably qtwayland5 and other qt wayland things
 
 waybar/i3blocks
 
