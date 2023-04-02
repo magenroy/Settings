@@ -11,6 +11,7 @@
 .config/foot/*
 .config/nvim/*
 .config/zathura/zathurarc
+.config/tridactyl/tridactylrc
 .config/qutebrowser/config.py
 .config/qutebrowser/css/*
 .config/qutebrowser/quickmarks
@@ -31,7 +32,6 @@
 .config/i3status/config
 .config/i3blocks/config
 .scripts/*
-.pentadactylrc
 .profile
 .tmux.conf
 .byobu/keybindings.tmux
