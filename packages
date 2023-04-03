@@ -21,6 +21,8 @@ zathura
 
 squeekboard or wvkbd
 
+maybe sensors (used in i3blocks temperature script for example)
+
 iio-sensor-proxy is probably already installed
 
 mpd?
