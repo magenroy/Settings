@@ -17,7 +17,7 @@ wob
 dunst or mako
 slurp
 gammastep
-zathura
+zathura or qpdfview (might need to set "use device pixel ratio" to true to make it look good)
 
 squeekboard or wvkbd
 
