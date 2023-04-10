@@ -1,3 +1,5 @@
+[p][packages.md]
+
 ### First time setup
 
 * First install `ssh` stuff

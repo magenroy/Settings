@@ -19,10 +19,10 @@
   * `wob`
   * `dunst`
   * `slurp`
-  * `zathura` or `qpdfview` (might need to set "use device pixel ratio" to true to make it look good)
+  * `zathura` or `qpdfview` (might need to set "use device pixel ratio" to `true` to make it look good)
   * `libappindicator`?
   * probably `qtwayland5` and other qt wayland things
-  * `waybar`/`i3blocks`
+  * `waybar` (maybe `i3blocks`?)
   * `imv`? `fim`? `swayimg`?
 * `playerctl`
 * `pulseaudio-utils`
