@@ -17,6 +17,9 @@
 
 * Use the `recset` command to keep config files up to date (see help message
   there)
+* If there are new config files:
+	* For system files: add the absolute path to `system`
+	* For user files: add the path relative to `$HOME` to `user`
 * if there is a new package that is essential, add it to `packages.md`
 * if there is some configuration that requires running commands, consider
   adding it to `runthis`
