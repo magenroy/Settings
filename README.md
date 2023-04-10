@@ -9,7 +9,7 @@
 	cd /
 	sudo tar xvf $HOME/.recset/system.tar
 	recset deploy
-	'''
+	```
 * install packages from `packages.md` as needed
 * consider running commands from `runthis`
 
