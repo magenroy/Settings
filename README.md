@@ -1,5 +1,3 @@
-[p][packages.md]
-
 ### First time setup
 
 * First install `ssh` stuff
@@ -12,7 +10,7 @@
 	sudo tar xvf $HOME/.recset/system.tar
 	recset deploy
 	```
-* install packages from `packages.md` as needed
+* install packages from [`packages.md`](packages.md) as needed
 * consider running commands from `runthis`
 
 ### Keeping up to date
@@ -22,6 +20,6 @@
 * If there are new config files:
 	* For system files: add the absolute path to `system`
 	* For user files: add the path relative to `$HOME` to `user`
-* if there is a new package that is essential, add it to `packages.md`
+* if there is a new package that is essential, add it to [`packages.md`](packages.md)
 * if there is some configuration that requires running commands, consider
   adding it to `runthis`
