@@ -14,6 +14,7 @@
 	* should automatically install `foot`
     * `swayidle`
     * `swaylock`
+	* `swayr`? (using `cargo`)
   * `wofi` (maybe `rofi`?)
   * `gammastep`
   * `wob`
@@ -33,9 +34,16 @@
 * tablet
   * `squeekboard` or `wvkbd`
   * `iio-sensor-proxy` is probably already installed
+  * (using `cargo`?) `rot8`
  
 * maybe `sensors` (used in `i3blocks` temperature script for example)
  
 * `mpd`?
 
 * `rxvt-unicode`? (if not using `foot`)
+
+* on Fedora
+	* `fuzzel`?
+	* `alacritty`?
+	* `zathura-pdf-mupdf`
+	* `nwg` stuff
