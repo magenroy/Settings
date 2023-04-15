@@ -1,4 +1,5 @@
 xdg-mime default org.pwmt.zathura.desktop application/pdf
+xdg-mime default org.gnome.Evince.desktop application/pdf
 
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Shift><Super>f']"
 gsettings set org.gnome.desktop.wm.keybindings close "['<Shift><Super>q']"
