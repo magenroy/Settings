@@ -1,7 +1,12 @@
 ### First time setup
 
 * First install `ssh` stuff
-* `ssh-keygen` the keys (as in instructions for setting up ssh for Github)
+* `ssh-keygen` the keys (as in [instructions for setting up ssh for
+  Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account))
+  * `ssh-keygen -t ed25519 -C "magenroy@gmail.com"` (see
+  [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key))
+  * copy the contents of `~/.ssh/id_ed25519.pub` to clipboard
+  * go to appropriate section of settings in github to add new ssh key
 * in home directory:
 	```sh
 	git clone git@github.com:magenroy/Settings
