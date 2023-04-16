@@ -1,6 +1,8 @@
 xdg-mime default org.pwmt.zathura.desktop application/pdf
 xdg-mime default org.gnome.Evince.desktop application/pdf
 
+sudo chmod o+w /sys/class/backlight/intel_backlight/brightness
+
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Shift><Super>f']"
 gsettings set org.gnome.desktop.wm.keybindings close "['<Shift><Super>q']"
 gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Shift><Super>h']"
