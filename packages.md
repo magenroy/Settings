@@ -29,7 +29,8 @@
 * `pulseaudio-utils`
 * `bluetooth`
 * `brightnessctl`
-  * may need to manually make brightness file writeable
+  * may need to manually make brightness file writeable, or add user to `video`
+	group (see `runthis` file)
 
 * tablet
   * `squeekboard` or `wvkbd`
