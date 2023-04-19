@@ -4,8 +4,8 @@
   * `neovim`
 * fonts
   * `fonts-noto`
-  * `fonts-font-awesome` (for rendering funky symbols)
-  * `fonts-inconsolata`
+  * `fonts-font-awesome`/`fontawesome-fonts` (for rendering funky symbols)
+  * `fonts-inconsolata`/`texlive-inconsolata`
 * texlive
   * `texlive-full`, or at least the essentials for LaTeX
   * `texlive-lang-cjk` (or at least Japanese (for yo))

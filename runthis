@@ -1,7 +1,8 @@
 xdg-mime default org.pwmt.zathura.desktop application/pdf
 xdg-mime default org.gnome.Evince.desktop application/pdf
 
-sudo usermod -aG video magenroy
+sudo usermod -aG video roy
+sudo usermod roy --shell /bin/zsh
 
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Shift><Super>f']"
 gsettings set org.gnome.desktop.wm.keybindings close "['<Shift><Super>q']"
