@@ -24,6 +24,7 @@
 .config/sway/*
 .config/rofi/*
 .config/wofi/*
+.config/fuzzel/*
 .config/herbstluftwm/*
 .config/systemd/*
 .config/environment.d/*
