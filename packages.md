@@ -11,10 +11,11 @@
   * `texlive-lang-cjk` (or at least Japanese (for yo))
 * graphical
   * `sway`
-	* should automatically install `foot`
     * `swayidle`
-    * `swaylock`
+    * `swaylock`?
 	* `swayr`? (using `cargo`)
+  * `foot` should be automatically installed by `sway`
+  * `wtype`
   * `wofi` (maybe `rofi`?)
   * `gammastep`
   * `wob`
