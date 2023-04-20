@@ -26,6 +26,7 @@
   * probably `qtwayland5` and other qt wayland things
   * `waybar` (maybe `i3blocks`?)
   * `imv`? `fim`? `swayimg`?
+  * `papirus` icon theme
 * `playerctl`
 * `pulseaudio-utils`
 * `bluetooth`

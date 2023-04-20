@@ -10,6 +10,7 @@
 .w3m/keymap
 .config/foot/*
 .config/nvim/*
+.config/dunst/*
 .config/zathura/zathurarc
 .config/tridactyl/tridactylrc
 .config/qutebrowser/config.py
