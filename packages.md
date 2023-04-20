@@ -5,7 +5,7 @@
 * fonts
   * `fonts-noto`
   * `fonts-font-awesome`/`fontawesome-fonts` (for rendering funky symbols)
-  * `fonts-inconsolata`/`texlive-inconsolata`
+  * `fonts-inconsolata`/`levien-inconsolata-fonts`
 * texlive
   * `texlive-full`, or at least the essentials for LaTeX
   * `texlive-lang-cjk` (or at least Japanese (for yo))
