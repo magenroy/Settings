@@ -4,7 +4,9 @@
   * `neovim`
 * fonts
   * `fonts-noto`
-  * `fonts-font-awesome`/`fontawesome-fonts` (for rendering funky symbols)
+  * for rendering funky symbols
+      * `fonts-font-awesome`/`fontawesome-fonts`
+      * `material-icons-fonts`
   * `fonts-inconsolata`/`levien-inconsolata-fonts`
 * texlive
   * `texlive-full`, or at least the essentials for LaTeX
@@ -49,6 +51,9 @@
     * `iwd`
         * don't forget to change the NetworkManager backend
     * `breeze` theme
+    * `Papirus` icon theme
+    * `material` (icon) theme
+
 
 * on Fedora
 	* `fuzzel`?
