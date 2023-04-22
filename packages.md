@@ -45,6 +45,11 @@
 
 * `rxvt-unicode`? (if not using `foot`)
 
+* consider getting
+    * `iwd`
+        * don't forget to change the NetworkManager backend
+    * `breeze` theme
+
 * on Fedora
 	* `fuzzel`?
 	* `alacritty`?
