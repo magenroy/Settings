@@ -1,2 +1,4 @@
+/usr/local/bin/*
+/usr/local/sbin/*
 /usr/local/lib/systemd/*
 /etc/udev/rules.d/a0-local.rules
