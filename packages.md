@@ -2,6 +2,7 @@
   * `zsh`
   * `fzf`
   * `neovim`
+  * `fd-find`, maybe `bat`
 * fonts
   * `fonts-noto`
   * for rendering funky symbols
