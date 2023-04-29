@@ -6,6 +6,11 @@ sudo usermod roy --shell /bin/zsh
 
 gsettings set org.gnome.desktop.interface icon-theme Papirus
 
+gsettings set org.gnome.desktop.interface gtk-theme Breeze
+gsettings set org.gnome.desktop.interface gtk-theme Breeze-Dark
+
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Shift><Super>f']"
 gsettings set org.gnome.desktop.wm.keybindings close "['<Shift><Super>q']"
 gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Shift><Super>h']"
