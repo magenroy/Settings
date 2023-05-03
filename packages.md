@@ -18,8 +18,9 @@
     * `swaylock`?
 	* `swayr`? (using `cargo`)
   * `foot` should be automatically installed by `sway`
+  * `alacritty`?
   * `wtype`
-  * `wofi` (maybe `rofi`?)
+  * `wofi` (maybe `rofi`?), `fuzzel`
   * `gammastep`
   * `wob`
   * `dunst`
@@ -57,7 +58,5 @@
 
 
 * on Fedora
-	* `fuzzel`?
-	* `alacritty`?
 	* `zathura-pdf-mupdf`
 	* `nwg` stuff
