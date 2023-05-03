@@ -17,6 +17,8 @@
     * `swayidle`
     * `swaylock`?
 	* `swayr`? (using `cargo`)
+	* some config (see `.config/sway/config.d/wait-sni-ready`) may need
+	  `python3-tenacity`, `python3-dbus-next`
   * `foot` should be automatically installed by `sway`
   * `alacritty`?
   * `wtype`
