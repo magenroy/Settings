@@ -30,4 +30,11 @@ gset_keys () {
 	gsettings set org.gnome.desktop.wm.keybindings minimize "['']" # Super+h
 }
 
-gset_keys
+gset () {
+	gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+	gsettings set org.gnome.mutter dynamic-workspaces false
+	gsettings set org.gnome.desktop.wm.preferences num-workspaces 10
+	gset_keys
+}
+
+gset
