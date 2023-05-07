@@ -9,9 +9,10 @@
       * `fonts-font-awesome`/`fontawesome-fonts`
       * `material-icons-fonts`
   * `fonts-inconsolata`/`levien-inconsolata-fonts`
-* texlive
+* writing
   * `texlive-full`, or at least the essentials for LaTeX
   * `texlive-lang-cjk` (or at least Japanese (for yo))
+  * `pandoc`
 * graphical
   * `sway`
     * `swayidle`
@@ -39,6 +40,10 @@
 * `brightnessctl`
   * may need to manually make brightness file writeable, or add user to `video`
 	group (see `runthis` file)
+* `vim`
+  * `vim-ale`?
+  * `vim-latex`
+  * `vim-nerdtree`
 
 * tablet
   * `squeekboard` or `wvkbd`

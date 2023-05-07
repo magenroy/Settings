@@ -10,6 +10,8 @@
 .w3m/keymap
 .local/bin/*
 .local/sbin/*
+.local/share/shellthemes/*
+.vim/colors/custom.vim
 .config/alacritty/*
 .config/foot/*
 .config/nvim/*
