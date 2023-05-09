@@ -47,6 +47,13 @@
   * `vim-latex`
   * `vim-nerdtree`
 
+* `npm`
+* Coc: after running the installer script `.recset/coc-installer.sh`, in `vim`,
+  run `:CocInstall ` with the following
+    * coc-ltex
+    * coc-vimtex
+    * coc-texlab
+
 * tablet
   * `squeekboard` or `wvkbd`
   * `iio-sensor-proxy` is probably already installed

@@ -4,6 +4,8 @@ xdg-mime default org.gnome.Evince.desktop application/pdf
 sudo usermod -aG video roy
 sudo usermod roy --shell /bin/zsh
 
+.recset/coc-installer.sh
+
 gsettings set org.gnome.desktop.interface icon-theme Papirus
 
 gsettings set org.gnome.desktop.interface gtk-theme Breeze
