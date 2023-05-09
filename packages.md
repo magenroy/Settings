@@ -40,12 +40,6 @@
 * `brightnessctl`
   * may need to manually make brightness file writeable, or add user to `video`
 	group (see `runthis` file)
-* `vim`
-  * `vim-airline`
-    * powerline fonts
-  * `vim-ale`?
-  * `vim-latex`
-  * `vim-nerdtree`
 
 * `npm`
 * Coc: after running the installer script `.recset/coc-installer.sh`, in `vim`,
