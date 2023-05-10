@@ -41,7 +41,7 @@
   * may need to manually make brightness file writeable, or add user to `video`
 	group (see `runthis` file)
 
-* `npm`
+* `npm` (make sure to have this for `coc`)
 * Coc: after running the installer script `.recset/coc-installer.sh`, in `vim`,
   run `:CocInstall ` with the following
     * coc-ltex
