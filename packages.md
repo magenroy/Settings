@@ -5,7 +5,7 @@
   * `fd-find`
   * maybe `bat`
   * `ripgrep`
-  * `exa`?
+  * `exa`? `lsd`?
 * fonts
   * `fonts-noto`
   * for rendering funky symbols
