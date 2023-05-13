@@ -4,8 +4,8 @@
 .ratpoisonrc
 .vimrc
 .vim/spell/*.add*
-.vim/ftplugin/*
-.vim/*.vim
+.vim/ftplugin/tex.vim
+.vim/after/plugin/userconf/*
 .vim/colors/custom.vim
 .vim/colors/base16-tomorrow-night.vim
 .vim/colors/base16-gruvbox-dark-hard.vim
