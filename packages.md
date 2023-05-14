@@ -50,6 +50,9 @@
     * coc-ltex
     * coc-vimtex
     * coc-texlab
+* `pip`
+    * `wheel`? (apparently needed for stuff)
+    * `pynvim`? (something (`coc`?) uses this?)
 
 * tablet
   * `squeekboard` or `wvkbd`
