@@ -6,6 +6,7 @@
 .vim/spell/*.add*
 .vim/ftplugin/tex.vim
 .vim/after/plugin/userconf/*
+.vim/*.vim
 .vim/colors/custom.vim
 .vim/colors/base16-tomorrow-night.vim
 .vim/colors/base16-gruvbox-dark-hard.vim
