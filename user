@@ -6,7 +6,7 @@
 .vim/spell/*.add*
 .vim/ftplugin/tex.vim
 .vim/ftplugin/markdown.vim
-.vim/after/plugin/userconf/*
+.vim/after/plugin/usrconf/*
 .vim/*.vim
 .config/nvim/init.lua
 .config/nvim/lua/*
