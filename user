@@ -10,6 +10,7 @@
 .vim/*.vim
 .config/nvim/init.lua
 .config/nvim/lua/*
+.config/nvim/after/*
 .vim/colors/custom.vim
 .vim/colors/base16-tomorrow-night.vim
 .vim/colors/base16-gruvbox-dark-hard.vim
