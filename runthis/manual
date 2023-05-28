@@ -4,6 +4,9 @@ xdg-mime default org.gnome.Evince.desktop application/pdf
 sudo usermod -aG video roy
 sudo usermod roy --shell /bin/zsh
 
+curl --proto '=https' -fLsS https://rossmacarthur.github.io/install/crate.sh \
+    | bash -s -- --repo rossmacarthur/sheldon --to ~/.local/bin
+
 .recset/coc-installer.sh
 
 gsettings set org.gnome.desktop.interface icon-theme Papirus
