@@ -58,6 +58,8 @@
   * `squeekboard` or `wvkbd`
   * `iio-sensor-proxy` is probably already installed
   * (using `cargo`?) `rot8`
+
+* `rclone` (cloud storage)
  
 * maybe `sensors` (used in `i3blocks` temperature script for example)
  
