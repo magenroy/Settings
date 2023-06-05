@@ -23,6 +23,7 @@
 .local/sbin/*
 .local/share/shellthemes/*
 .config/sheldon/plugins.toml
+.config/kitty/*
 .config/alacritty/*
 .config/foot/*
 .config/nvim/*
