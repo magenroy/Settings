@@ -17,8 +17,8 @@ __get_nerdfont() {
     rm "$nerdfont$ext"
 }
 
-nerdfont="Inconsolata"
-release="3.0.1"
+[ "$nerdfont" = "" ] && nerdfont="Inconsolata"
+[ "$release" = "" ] && release="3.0.1"
 
 fontdir=""
 if [ -e "$HOME/Library/Fonts" ]; then
