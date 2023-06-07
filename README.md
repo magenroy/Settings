@@ -28,3 +28,8 @@
 * if there is a new package that is essential, add it to [`packages.md`](packages.md)
 * if there is some configuration that requires running commands, consider
   adding it to `runthis`
+
+### Misc
+
+* run ```sh curl
+  https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/bin/scripts/test-fonts.sh | bash''' to test fonts
