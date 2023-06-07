@@ -3,22 +3,33 @@
 nerdfont=$1
 release=$2
 
+ext="tar.xz"
+
+[ "$nerdfont" = "" ] && nerdfont="NerdFontsSymbolsOnly"
+[ "$release" = "" ] && release="3.0.2"
+
+case $release in
+    3*) ext="tar.xz";;
+    *) ext="zip";;
+esac
+
 __get_nerdfont() {
     set -e
     set -u
 
-	echo "https://github.com/ryanoasis/nerd-fonts/releases/download/v$release/$nerdfont.tar.xz"
+    file="$nerdfont.$ext"
 
-	ext=".tar.xz"
+    echo "https://github.com/ryanoasis/nerd-fonts/releases/download/v$release/$file"
 
-    curl -fsSLo "$nerdfont$ext" \
-	"https://github.com/ryanoasis/nerd-fonts/releases/download/v$release/$nerdfont$ext"
-    tar xvf "$nerdfont$ext"
-    rm "$nerdfont$ext"
+    curl -fsSLo "$file" \
+	"https://github.com/ryanoasis/nerd-fonts/releases/download/v$release/$file"
+    case $ext in
+	"tar.xz") tar xvf "$file";;
+	"zip") unzip "$file";;
+    esac
+    rm "$file"
 }
 
-[ "$nerdfont" = "" ] && nerdfont="Inconsolata"
-[ "$release" = "" ] && release="3.0.1"
 
 fontdir=""
 if [ -e "$HOME/Library/Fonts" ]; then
@@ -36,4 +47,4 @@ fi
 
 echo "Installed $nerdfont to ~/$fontdir"
 
-fc-cache -fv
+fc-cache -f
