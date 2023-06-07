@@ -12,6 +12,8 @@
       * `fonts-font-awesome`/`fontawesome-fonts`
       * `material-icons-fonts`
   * `fonts-inconsolata`/`levien-inconsolata-fonts`
+  * `firacode`
+  * `jetbrains-mono`
 * writing
   * `texlive-full`, or at least the essentials for LaTeX
   * `texlive-lang-cjk` (or at least Japanese (for yo))
