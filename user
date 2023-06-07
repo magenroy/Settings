@@ -22,6 +22,7 @@
 .local/bin/*
 .local/sbin/*
 .local/share/shellthemes/*
+.config/fontconfig/*
 .config/sheldon/plugins.toml
 .config/wezterm/*
 .config/kitty/*
