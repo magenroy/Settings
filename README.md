@@ -32,4 +32,4 @@
 ### Misc
 
 * run ```sh curl
-  https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/bin/scripts/test-fonts.sh | bash''' to test fonts
+  https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/bin/scripts/test-fonts.sh | bash``` to test fonts
