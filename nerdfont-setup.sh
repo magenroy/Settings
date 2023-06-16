@@ -1,4 +1,6 @@
 #!/bin/sh
+#
+# Consider using https://github.com/ronniedroid/getnf instead
 
 nerdfont=$1
 release=$2
