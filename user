@@ -12,11 +12,6 @@
 .config/nvim/init.lua
 .config/nvim/lua/*
 .config/nvim/after/*
-.vim/colors/custom.vim
-.vim/colors/base16-tomorrow-night.vim
-.vim/colors/base16-gruvbox-dark-hard.vim
-.vim/colors/base16-material-darker.vim
-.vim/colors/space-vim-theme.vim
 .aliases
 .inputrc
 .w3m/keymap
