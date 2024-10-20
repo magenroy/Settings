@@ -9,11 +9,10 @@
   * go to appropriate section of settings in github to add new ssh key
 * in home directory:
 	```sh
+	cd $HOME
 	git clone git@github.com:magenroy/Settings
-	mv Settings .recset		# optional
-	cd /
-	sudo tar xvf $HOME/.recset/system.tar
-	recset deploy
+	mv Settings .recset
+	tar xvf .recset/user.tar
 	```
 * install packages from [`packages.md`](packages.md) as needed
 * consider running commands from `runthis`

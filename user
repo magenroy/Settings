@@ -37,6 +37,7 @@
 .config/gammastep/*
 .config/git/config
 .config/vlc/vlcrc
+.config/aerospace/*
 .config/i3/*
 .config/sway/*
 .config/rofi/*
