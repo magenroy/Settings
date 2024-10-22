@@ -1,4 +1,4 @@
-Library/Application*/sioyek/keys_user.config
+Library/Application*/sioyek/*user.config
 .xinitrc
 .zshrc
 .p10k.zsh
