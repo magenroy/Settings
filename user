@@ -20,6 +20,7 @@ Library/Application*/sioyek/*user.config
 .local/bin/*
 .local/sbin/*
 .local/share/shellthemes/*
+.local/share/ltex/ltex.*
 .config/fontconfig/*
 .config/sheldon/plugins.toml
 .config/wezterm/*
