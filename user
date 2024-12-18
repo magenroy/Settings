@@ -53,10 +53,10 @@ Library/Application*/sioyek/*user.config
 .config/i3status/*
 .config/i3blocks/*
 .config/tmux/*
-.byobu/keybindings.tmux
+.config/byobu/keybindings.tmux
 .profile
 .fbtermrc
-.muttrc
-.mutt/keybindings
+.config/mutt/muttrc
+.config/mutt/keybindings
 Documents/Macros.sty
 .Xresources
