@@ -1,4 +1,6 @@
 - shell
+  - `nvimpager`?
+  - `grc`
   - `z` or `zoxide`
   - `zsh`
   - `fzf`
