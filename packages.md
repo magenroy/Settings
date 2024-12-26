@@ -58,12 +58,10 @@
   - coc-vimtex
   - coc-texlab
 - `pip`
-
   - `wheel`? (apparently needed for stuff)
   - `pynvim`? (something (`coc`?) uses this?)
 
 - tablet
-
   - `squeekboard` or `wvkbd`
   - `iio-sensor-proxy` is probably already installed
   - (using `cargo`?) `rot8`
@@ -77,7 +75,6 @@
 - `rxvt-unicode`? (if not using `foot`)
 
 - consider getting
-
   - `iwd`
     - don't forget to change the NetworkManager backend
   - `breeze` theme
